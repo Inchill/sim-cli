@@ -32,10 +32,10 @@ program
 program
   .name('sim-cli')
   .usage('<commands> [options]')
-  .command('init <project_name>')
+  .command('init')
   .description('Create a vue project.')
-  .action(project => {
-    initProject(project)
+  .action(() => {
+    initProject()
   })
 
 program.parse(process.argv)

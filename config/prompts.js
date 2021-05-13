@@ -3,20 +3,18 @@ module.exports = [
     type: "input",
     name: "projectName",
     message: "请输入项目名称",
-    required: true,
-    default: ''
+    required: true
   },
   {
     type: "input",
     name: "description",
     message: "请输入项目简介",
-    default: ''
+    default: 'a vue project'
   },
   {
     type: "input",
     name: "author",
-    message: "请输入作者名称",
-    default: ''
+    message: "请输入作者名称"
   },
   {
     type: "list",

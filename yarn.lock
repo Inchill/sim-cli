@@ -263,6 +263,16 @@
   "resolved" "http://artifactory.intra.xiaojukeji.com:80/artifactory/api/npm/npm/camelcase/-/camelcase-6.2.0.tgz?dl=https%3A%2F%2Frepo.huaweicloud.com%2Frepository%2Fnpm%2Fcamelcase%2F-%2Fcamelcase-6.2.0.tgz"
   "version" "6.2.0"
 
+"caw@^2.0.1":
+  "integrity" "sha1-bDygcfwZRyCIPC3F2psHS/x+npU="
+  "resolved" "http://artifactory.intra.xiaojukeji.com:80/artifactory/api/npm/npm/caw/-/caw-2.0.1.tgz?dl=https%3A%2F%2Frepo.huaweicloud.com%2Frepository%2Fnpm%2Fcaw%2F-%2Fcaw-2.0.1.tgz"
+  "version" "2.0.1"
+  dependencies:
+    "get-proxy" "^2.0.0"
+    "isurl" "^1.0.0-alpha5"
+    "tunnel-agent" "^0.6.0"
+    "url-to-options" "^1.0.1"
+
 "chalk@^2.0.0":
   "integrity" "sha1-zUJUFnelQzPPVBpJEIwUMrRMlCQ="
   "resolved" "http://artifactory.intra.xiaojukeji.com:80/artifactory/api/npm/npm/chalk/-/chalk-2.4.2.tgz?dl=https%3A%2F%2Frepo.huaweicloud.com%2Frepository%2Fnpm%2Fchalk%2F-%2Fchalk-2.4.2.tgz"
@@ -363,6 +373,14 @@
   "resolved" "http://artifactory.intra.xiaojukeji.com:80/artifactory/api/npm/npm/concat-map/-/concat-map-0.0.1.tgz?dl=https%3A%2F%2Frepo.huaweicloud.com%2Frepository%2Fnpm%2Fconcat-map%2F-%2Fconcat-map-0.0.1.tgz"
   "version" "0.0.1"
 
+"config-chain@^1.1.11":
+  "integrity" "sha1-D96NCRIA616AjK8l/mGMAvSOTvo="
+  "resolved" "http://artifactory.intra.xiaojukeji.com:80/artifactory/api/npm/npm/config-chain/-/config-chain-1.1.12.tgz?dl=https%3A%2F%2Frepo.huaweicloud.com%2Frepository%2Fnpm%2Fconfig-chain%2F-%2Fconfig-chain-1.1.12.tgz"
+  "version" "1.1.12"
+  dependencies:
+    "ini" "^1.3.4"
+    "proto-list" "~1.2.1"
+
 "configstore@^5.0.1":
   "integrity" "sha1-02UCG130uYzdGH1qOw4/anzF7ZY="
   "resolved" "http://artifactory.intra.xiaojukeji.com:80/artifactory/api/npm/npm/configstore/-/configstore-5.0.1.tgz?dl=https%3A%2F%2Frepo.huaweicloud.com%2Frepository%2Fnpm%2Fconfigstore%2F-%2Fconfigstore-5.0.1.tgz"
@@ -459,7 +477,7 @@
     "pify" "^2.3.0"
     "yauzl" "^2.4.2"
 
-"decompress@^4.2.1":
+"decompress@^4.2.0":
   "integrity" "sha1-AH9VzGpiwFWvo3wH62pO4bdz8Rg="
   "resolved" "http://artifactory.intra.xiaojukeji.com:80/artifactory/api/npm/npm/decompress/-/decompress-4.2.1.tgz?dl=https%3A%2F%2Frepo.huaweicloud.com%2Frepository%2Fnpm%2Fdecompress%2F-%2Fdecompress-4.2.1.tgz"
   "version" "4.2.1"
@@ -509,22 +527,32 @@
   dependencies:
     "is-obj" "^2.0.0"
 
-"download@^8.0.0":
-  "integrity" "sha1-r8CzCXMIEXMarp9Tccn0a+c+UbE="
-  "resolved" "http://artifactory.intra.xiaojukeji.com:80/artifactory/api/npm/npm/download/-/download-8.0.0.tgz?dl=https%3A%2F%2Frepo.huaweicloud.com%2Frepository%2Fnpm%2Fdownload%2F-%2Fdownload-8.0.0.tgz"
-  "version" "8.0.0"
+"download-git-repo@^3.0.2":
+  "integrity" "sha1-jKriT7Kr1kUxct7qVhkDYCTxkPY="
+  "resolved" "http://artifactory.intra.xiaojukeji.com:80/artifactory/api/npm/npm/download-git-repo/-/download-git-repo-3.0.2.tgz?dl=https%3A%2F%2Frepo.huaweicloud.com%2Frepository%2Fnpm%2Fdownload-git-repo%2F-%2Fdownload-git-repo-3.0.2.tgz"
+  "version" "3.0.2"
+  dependencies:
+    "download" "^7.1.0"
+    "git-clone" "^0.1.0"
+    "rimraf" "^3.0.0"
+
+"download@^7.1.0":
+  "integrity" "sha1-kFmqnXC1A+52oTKJe+beyOVYcjM="
+  "resolved" "http://artifactory.intra.xiaojukeji.com:80/artifactory/api/npm/npm/download/-/download-7.1.0.tgz?dl=https%3A%2F%2Frepo.huaweicloud.com%2Frepository%2Fnpm%2Fdownload%2F-%2Fdownload-7.1.0.tgz"
+  "version" "7.1.0"
   dependencies:
     "archive-type" "^4.0.0"
+    "caw" "^2.0.1"
     "content-disposition" "^0.5.2"
-    "decompress" "^4.2.1"
+    "decompress" "^4.2.0"
     "ext-name" "^5.0.0"
-    "file-type" "^11.1.0"
-    "filenamify" "^3.0.0"
-    "get-stream" "^4.1.0"
+    "file-type" "^8.1.0"
+    "filenamify" "^2.0.0"
+    "get-stream" "^3.0.0"
     "got" "^8.3.1"
-    "make-dir" "^2.1.0"
+    "make-dir" "^1.2.0"
     "p-event" "^2.1.0"
-    "pify" "^4.0.1"
+    "pify" "^3.0.0"
 
 "duplexer3@^0.1.4":
   "integrity" "sha1-7gHdHKwO08vH/b6jfcCo8c4ALOI="
@@ -746,11 +774,6 @@
   dependencies:
     "flat-cache" "^3.0.4"
 
-"file-type@^11.1.0":
-  "integrity" "sha1-k3gPP+2YtZl1XYRrmaFheirQY7g="
-  "resolved" "http://artifactory.intra.xiaojukeji.com:80/artifactory/api/npm/npm/file-type/-/file-type-11.1.0.tgz?dl=https%3A%2F%2Frepo.huaweicloud.com%2Frepository%2Fnpm%2Ffile-type%2F-%2Ffile-type-11.1.0.tgz"
-  "version" "11.1.0"
-
 "file-type@^3.8.0":
   "integrity" "sha1-JXoHg4TR24CHvESdEH1SpSZyuek="
   "resolved" "http://artifactory.intra.xiaojukeji.com:80/artifactory/api/npm/npm/file-type/-/file-type-3.9.0.tgz?dl=https%3A%2F%2Frepo.huaweicloud.com%2Frepository%2Fnpm%2Ffile-type%2F-%2Ffile-type-3.9.0.tgz"
@@ -771,15 +794,20 @@
   "resolved" "http://artifactory.intra.xiaojukeji.com:80/artifactory/api/npm/npm/file-type/-/file-type-6.2.0.tgz?dl=https%3A%2F%2Frepo.huaweicloud.com%2Frepository%2Fnpm%2Ffile-type%2F-%2Ffile-type-6.2.0.tgz"
   "version" "6.2.0"
 
+"file-type@^8.1.0":
+  "integrity" "sha1-JE87fvZBu+DMoZbHJ25LMyOZ9ow="
+  "resolved" "http://artifactory.intra.xiaojukeji.com:80/artifactory/api/npm/npm/file-type/-/file-type-8.1.0.tgz?dl=https%3A%2F%2Frepo.huaweicloud.com%2Frepository%2Fnpm%2Ffile-type%2F-%2Ffile-type-8.1.0.tgz"
+  "version" "8.1.0"
+
 "filename-reserved-regex@^2.0.0":
   "integrity" "sha1-q/c9+rc10EVECr/qLZHzieu/oik="
   "resolved" "http://artifactory.intra.xiaojukeji.com:80/artifactory/api/npm/npm/filename-reserved-regex/-/filename-reserved-regex-2.0.0.tgz?dl=https%3A%2F%2Frepo.huaweicloud.com%2Frepository%2Fnpm%2Ffilename-reserved-regex%2F-%2Ffilename-reserved-regex-2.0.0.tgz"
   "version" "2.0.0"
 
-"filenamify@^3.0.0":
-  "integrity" "sha1-lgPraIF5+MXUDYKGJty7ksOkZyw="
-  "resolved" "http://artifactory.intra.xiaojukeji.com:80/artifactory/api/npm/npm/filenamify/-/filenamify-3.0.0.tgz?dl=https%3A%2F%2Frepo.huaweicloud.com%2Frepository%2Fnpm%2Ffilenamify%2F-%2Ffilenamify-3.0.0.tgz"
-  "version" "3.0.0"
+"filenamify@^2.0.0":
+  "integrity" "sha1-iPr0lfsbR6v9YSMAACoWIoxnfuk="
+  "resolved" "http://artifactory.intra.xiaojukeji.com:80/artifactory/api/npm/npm/filenamify/-/filenamify-2.1.0.tgz?dl=https%3A%2F%2Frepo.huaweicloud.com%2Frepository%2Fnpm%2Ffilenamify%2F-%2Ffilenamify-2.1.0.tgz"
+  "version" "2.1.0"
   dependencies:
     "filename-reserved-regex" "^2.0.0"
     "strip-outer" "^1.0.0"
@@ -830,6 +858,13 @@
   "resolved" "http://artifactory.intra.xiaojukeji.com:80/artifactory/api/npm/npm/functional-red-black-tree/-/functional-red-black-tree-1.0.1.tgz?dl=https%3A%2F%2Frepo.huaweicloud.com%2Frepository%2Fnpm%2Ffunctional-red-black-tree%2F-%2Ffunctional-red-black-tree-1.0.1.tgz"
   "version" "1.0.1"
 
+"get-proxy@^2.0.0":
+  "integrity" "sha1-NJ8rTZHUTE1NTpy6KtkBQ/rF75M="
+  "resolved" "http://artifactory.intra.xiaojukeji.com:80/artifactory/api/npm/npm/get-proxy/-/get-proxy-2.1.0.tgz?dl=https%3A%2F%2Frepo.huaweicloud.com%2Frepository%2Fnpm%2Fget-proxy%2F-%2Fget-proxy-2.1.0.tgz"
+  "version" "2.1.0"
+  dependencies:
+    "npm-conf" "^1.1.0"
+
 "get-stream@^2.2.0":
   "integrity" "sha1-Xzj5PzRgCWZu4BUKBUFn+Rvdld4="
   "resolved" "http://artifactory.intra.xiaojukeji.com:80/artifactory/api/npm/npm/get-stream/-/get-stream-2.3.1.tgz?dl=https%3A%2F%2Frepo.huaweicloud.com%2Frepository%2Fnpm%2Fget-stream%2F-%2Fget-stream-2.3.1.tgz"
@@ -838,7 +873,7 @@
     "object-assign" "^4.0.1"
     "pinkie-promise" "^2.0.0"
 
-"get-stream@^3.0.0":
+"get-stream@^3.0.0", "get-stream@3.0.0":
   "integrity" "sha1-jpQ9E1jcN1VQVOy+LtsFqhdO3hQ="
   "resolved" "http://artifactory.intra.xiaojukeji.com:80/artifactory/api/npm/npm/get-stream/-/get-stream-3.0.0.tgz?dl=https%3A%2F%2Frepo.huaweicloud.com%2Frepository%2Fnpm%2Fget-stream%2F-%2Fget-stream-3.0.0.tgz"
   "version" "3.0.0"
@@ -857,10 +892,10 @@
   dependencies:
     "pump" "^3.0.0"
 
-"get-stream@3.0.0":
-  "integrity" "sha1-jpQ9E1jcN1VQVOy+LtsFqhdO3hQ="
-  "resolved" "http://artifactory.intra.xiaojukeji.com:80/artifactory/api/npm/npm/get-stream/-/get-stream-3.0.0.tgz?dl=https%3A%2F%2Frepo.huaweicloud.com%2Frepository%2Fnpm%2Fget-stream%2F-%2Fget-stream-3.0.0.tgz"
-  "version" "3.0.0"
+"git-clone@^0.1.0":
+  "integrity" "sha1-DXYWN3gJOu9/HDAjjyqe8/B6Lrk="
+  "resolved" "http://artifactory.intra.xiaojukeji.com:80/artifactory/api/npm/npm/git-clone/-/git-clone-0.1.0.tgz?dl=https%3A%2F%2Frepo.huaweicloud.com%2Frepository%2Fnpm%2Fgit-clone%2F-%2Fgit-clone-0.1.0.tgz"
+  "version" "0.1.0"
 
 "glob-parent@^5.0.0":
   "integrity" "sha1-hpgyxYA0/mikCTwX3BXoNA2EAcQ="
@@ -1043,6 +1078,11 @@
   "integrity" "sha1-D6LGT5MpF8NDOg3tVTY6rjdBa3w="
   "resolved" "http://artifactory.intra.xiaojukeji.com:80/artifactory/api/npm/npm/inherits/-/inherits-2.0.4.tgz?dl=https%3A%2F%2Frepo.huaweicloud.com%2Frepository%2Fnpm%2Finherits%2F-%2Finherits-2.0.4.tgz"
   "version" "2.0.4"
+
+"ini@^1.3.4":
+  "integrity" "sha1-op2kJbSIBvNHZ6Tvzjlyaa8oQyw="
+  "resolved" "http://artifactory.intra.xiaojukeji.com:80/artifactory/api/npm/npm/ini/-/ini-1.3.8.tgz?dl=https%3A%2F%2Frepo.huaweicloud.com%2Frepository%2Fnpm%2Fini%2F-%2Fini-1.3.8.tgz"
+  "version" "1.3.8"
 
 "ini@~1.3.0":
   "integrity" "sha1-op2kJbSIBvNHZ6Tvzjlyaa8oQyw="
@@ -1238,7 +1278,14 @@
   optionalDependencies:
     "graceful-fs" "^4.1.6"
 
-"keyv@^3.0.0", "keyv@3.0.0":
+"keyv@^3.0.0":
+  "integrity" "sha1-7MIoSG9pmR5J6UdkhaW+Ho/FxNk="
+  "resolved" "http://artifactory.intra.xiaojukeji.com:80/artifactory/api/npm/npm/keyv/-/keyv-3.1.0.tgz?dl=https%3A%2F%2Frepo.huaweicloud.com%2Frepository%2Fnpm%2Fkeyv%2F-%2Fkeyv-3.1.0.tgz"
+  "version" "3.1.0"
+  dependencies:
+    "json-buffer" "3.0.0"
+
+"keyv@3.0.0":
   "integrity" "sha1-RJI7o55osSp87H32wyaMAx8u83M="
   "resolved" "http://artifactory.intra.xiaojukeji.com:80/artifactory/api/npm/npm/keyv/-/keyv-3.0.0.tgz?dl=https%3A%2F%2Frepo.huaweicloud.com%2Frepository%2Fnpm%2Fkeyv%2F-%2Fkeyv-3.0.0.tgz"
   "version" "3.0.0"
@@ -1312,13 +1359,12 @@
   dependencies:
     "pify" "^3.0.0"
 
-"make-dir@^2.1.0":
-  "integrity" "sha1-XwMQ4YuL6JjMBwCSlaMK5B6R5vU="
-  "resolved" "http://artifactory.intra.xiaojukeji.com:80/artifactory/api/npm/npm/make-dir/-/make-dir-2.1.0.tgz?dl=https%3A%2F%2Frepo.huaweicloud.com%2Frepository%2Fnpm%2Fmake-dir%2F-%2Fmake-dir-2.1.0.tgz"
-  "version" "2.1.0"
+"make-dir@^1.2.0":
+  "integrity" "sha1-ecEDO4BRW9bSTsmTPoYMp17ifww="
+  "resolved" "http://artifactory.intra.xiaojukeji.com:80/artifactory/api/npm/npm/make-dir/-/make-dir-1.3.0.tgz?dl=https%3A%2F%2Frepo.huaweicloud.com%2Frepository%2Fnpm%2Fmake-dir%2F-%2Fmake-dir-1.3.0.tgz"
+  "version" "1.3.0"
   dependencies:
-    "pify" "^4.0.1"
-    "semver" "^5.6.0"
+    "pify" "^3.0.0"
 
 "make-dir@^3.0.0":
   "integrity" "sha1-QV6WcEazp/HRhSd9hKpYIDcmoT8="
@@ -1387,6 +1433,14 @@
     "prepend-http" "^2.0.0"
     "query-string" "^5.0.1"
     "sort-keys" "^2.0.0"
+
+"npm-conf@^1.1.0":
+  "integrity" "sha1-JWzEe9DiGMJZxOlVC/QTvCGSr/k="
+  "resolved" "http://artifactory.intra.xiaojukeji.com:80/artifactory/api/npm/npm/npm-conf/-/npm-conf-1.1.3.tgz?dl=https%3A%2F%2Frepo.huaweicloud.com%2Frepository%2Fnpm%2Fnpm-conf%2F-%2Fnpm-conf-1.1.3.tgz"
+  "version" "1.1.3"
+  dependencies:
+    "config-chain" "^1.1.11"
+    "pify" "^3.0.0"
 
 "object-assign@^4.0.1", "object-assign@^4.1.0":
   "integrity" "sha1-IQmtx5ZYh8/AXLvUQsrIv7s2CGM="
@@ -1515,11 +1569,6 @@
   "resolved" "http://artifactory.intra.xiaojukeji.com:80/artifactory/api/npm/npm/pify/-/pify-3.0.0.tgz?dl=https%3A%2F%2Frepo.huaweicloud.com%2Frepository%2Fnpm%2Fpify%2F-%2Fpify-3.0.0.tgz"
   "version" "3.0.0"
 
-"pify@^4.0.1":
-  "integrity" "sha1-SyzSXFDVmHNcUCkiJP2MbfQeMjE="
-  "resolved" "http://artifactory.intra.xiaojukeji.com:80/artifactory/api/npm/npm/pify/-/pify-4.0.1.tgz?dl=https%3A%2F%2Frepo.huaweicloud.com%2Frepository%2Fnpm%2Fpify%2F-%2Fpify-4.0.1.tgz"
-  "version" "4.0.1"
-
 "pinkie-promise@^2.0.0":
   "integrity" "sha1-ITXW36ejWMBprJsXh3YogihFD/o="
   "resolved" "http://artifactory.intra.xiaojukeji.com:80/artifactory/api/npm/npm/pinkie-promise/-/pinkie-promise-2.0.1.tgz?dl=https%3A%2F%2Frepo.huaweicloud.com%2Frepository%2Fnpm%2Fpinkie-promise%2F-%2Fpinkie-promise-2.0.1.tgz"
@@ -1551,6 +1600,11 @@
   "integrity" "sha1-foz42PW48jnBvGi+tOt4Vn1XLvg="
   "resolved" "http://artifactory.intra.xiaojukeji.com:80/artifactory/api/npm/npm/progress/-/progress-2.0.3.tgz?dl=https%3A%2F%2Frepo.huaweicloud.com%2Frepository%2Fnpm%2Fprogress%2F-%2Fprogress-2.0.3.tgz"
   "version" "2.0.3"
+
+"proto-list@~1.2.1":
+  "integrity" "sha1-IS1b/hMYMGpCD2QCuOJv85ZHqEk="
+  "resolved" "http://artifactory.intra.xiaojukeji.com:80/artifactory/api/npm/npm/proto-list/-/proto-list-1.2.4.tgz?dl=https%3A%2F%2Frepo.huaweicloud.com%2Frepository%2Fnpm%2Fproto-list%2F-%2Fproto-list-1.2.4.tgz"
+  "version" "1.2.4"
 
 "pump@^3.0.0":
   "integrity" "sha1-tKIRaBW94vTh6mAjVOjHVWUQemQ="
@@ -1591,7 +1645,20 @@
     "minimist" "^1.2.0"
     "strip-json-comments" "~2.0.1"
 
-"readable-stream@^2.0.0", "readable-stream@^2.3.0", "readable-stream@^2.3.5":
+"readable-stream@^2.0.0":
+  "integrity" "sha1-Hsoc9xGu+BTAT2IlKjamL2yyO1c="
+  "resolved" "http://artifactory.intra.xiaojukeji.com:80/artifactory/api/npm/npm/readable-stream/-/readable-stream-2.3.7.tgz?dl=https%3A%2F%2Frepo.huaweicloud.com%2Frepository%2Fnpm%2Freadable-stream%2F-%2Freadable-stream-2.3.7.tgz"
+  "version" "2.3.7"
+  dependencies:
+    "core-util-is" "~1.0.0"
+    "inherits" "~2.0.3"
+    "isarray" "~1.0.0"
+    "process-nextick-args" "~2.0.0"
+    "safe-buffer" "~5.1.1"
+    "string_decoder" "~1.1.1"
+    "util-deprecate" "~1.0.1"
+
+"readable-stream@^2.3.0", "readable-stream@^2.3.5":
   "integrity" "sha1-Hsoc9xGu+BTAT2IlKjamL2yyO1c="
   "resolved" "http://artifactory.intra.xiaojukeji.com:80/artifactory/api/npm/npm/readable-stream/-/readable-stream-2.3.7.tgz?dl=https%3A%2F%2Frepo.huaweicloud.com%2Frepository%2Fnpm%2Freadable-stream%2F-%2Freadable-stream-2.3.7.tgz"
   "version" "2.3.7"
@@ -1657,7 +1724,7 @@
     "onetime" "^5.1.0"
     "signal-exit" "^3.0.2"
 
-"rimraf@^3.0.2":
+"rimraf@^3.0.0", "rimraf@^3.0.2":
   "integrity" "sha1-8aVAK6YiCtUswSgrrBrjqkn9Bho="
   "resolved" "http://artifactory.intra.xiaojukeji.com:80/artifactory/api/npm/npm/rimraf/-/rimraf-3.0.2.tgz?dl=https%3A%2F%2Frepo.huaweicloud.com%2Frepository%2Fnpm%2Frimraf%2F-%2Frimraf-3.0.2.tgz"
   "version" "3.0.2"
@@ -1676,7 +1743,17 @@
   dependencies:
     "tslib" "^1.9.0"
 
-"safe-buffer@^5.1.1", "safe-buffer@~5.1.0", "safe-buffer@~5.1.1", "safe-buffer@5.1.2":
+"safe-buffer@^5.0.1", "safe-buffer@^5.1.1", "safe-buffer@~5.2.0":
+  "integrity" "sha1-Hq+fqb2x/dTsdfWPnNtOa3gn7sY="
+  "resolved" "http://artifactory.intra.xiaojukeji.com:80/artifactory/api/npm/npm/safe-buffer/-/safe-buffer-5.2.1.tgz?dl=https%3A%2F%2Frepo.huaweicloud.com%2Frepository%2Fnpm%2Fsafe-buffer%2F-%2Fsafe-buffer-5.2.1.tgz"
+  "version" "5.2.1"
+
+"safe-buffer@~5.1.0", "safe-buffer@~5.1.1":
+  "integrity" "sha1-mR7GnSluAxN0fVm9/St0XDX4go0="
+  "resolved" "http://artifactory.intra.xiaojukeji.com:80/artifactory/api/npm/npm/safe-buffer/-/safe-buffer-5.1.2.tgz?dl=https%3A%2F%2Frepo.huaweicloud.com%2Frepository%2Fnpm%2Fsafe-buffer%2F-%2Fsafe-buffer-5.1.2.tgz"
+  "version" "5.1.2"
+
+"safe-buffer@5.1.2":
   "integrity" "sha1-mR7GnSluAxN0fVm9/St0XDX4go0="
   "resolved" "http://artifactory.intra.xiaojukeji.com:80/artifactory/api/npm/npm/safe-buffer/-/safe-buffer-5.1.2.tgz?dl=https%3A%2F%2Frepo.huaweicloud.com%2Frepository%2Fnpm%2Fsafe-buffer%2F-%2Fsafe-buffer-5.1.2.tgz"
   "version" "5.1.2"
@@ -1699,11 +1776,6 @@
   "version" "3.1.1"
   dependencies:
     "semver" "^6.3.0"
-
-"semver@^5.6.0":
-  "integrity" "sha1-qVT5Ma66UI0we78Gnv8MAclhFvc="
-  "resolved" "http://artifactory.intra.xiaojukeji.com:80/artifactory/api/npm/npm/semver/-/semver-5.7.1.tgz?dl=https%3A%2F%2Frepo.huaweicloud.com%2Frepository%2Fnpm%2Fsemver%2F-%2Fsemver-5.7.1.tgz"
-  "version" "5.7.1"
 
 "semver@^6.0.0":
   "integrity" "sha1-7gpkyK9ejO6mdoexM3YeG+y9HT0="
@@ -1789,7 +1861,14 @@
   "resolved" "http://artifactory.intra.xiaojukeji.com:80/artifactory/api/npm/npm/strict-uri-encode/-/strict-uri-encode-1.1.0.tgz?dl=https%3A%2F%2Frepo.huaweicloud.com%2Frepository%2Fnpm%2Fstrict-uri-encode%2F-%2Fstrict-uri-encode-1.1.0.tgz"
   "version" "1.1.0"
 
-"string_decoder@^1.1.1", "string_decoder@~1.1.1":
+"string_decoder@^1.1.1":
+  "integrity" "sha1-QvEUWUpGzxqOMLCoT1bHjD7awh4="
+  "resolved" "http://artifactory.intra.xiaojukeji.com:80/artifactory/api/npm/npm/string_decoder/-/string_decoder-1.3.0.tgz?dl=https%3A%2F%2Frepo.huaweicloud.com%2Frepository%2Fnpm%2Fstring_decoder%2F-%2Fstring_decoder-1.3.0.tgz"
+  "version" "1.3.0"
+  dependencies:
+    "safe-buffer" "~5.2.0"
+
+"string_decoder@~1.1.1":
   "integrity" "sha1-nPFhG6YmhdcDCunkujQUnDrwP8g="
   "resolved" "http://artifactory.intra.xiaojukeji.com:80/artifactory/api/npm/npm/string_decoder/-/string_decoder-1.1.1.tgz?dl=https%3A%2F%2Frepo.huaweicloud.com%2Frepository%2Fnpm%2Fstring_decoder%2F-%2Fstring_decoder-1.1.1.tgz"
   "version" "1.1.1"
@@ -1934,6 +2013,13 @@
   "integrity" "sha1-zy04vcNKE0vK8QkcQfZhni9nLQA="
   "resolved" "http://artifactory.intra.xiaojukeji.com:80/artifactory/api/npm/npm/tslib/-/tslib-1.14.1.tgz?dl=https%3A%2F%2Frepo.huaweicloud.com%2Frepository%2Fnpm%2Ftslib%2F-%2Ftslib-1.14.1.tgz"
   "version" "1.14.1"
+
+"tunnel-agent@^0.6.0":
+  "integrity" "sha1-J6XeoGs2sEoKmWZ3SykIaPD8QP0="
+  "resolved" "http://artifactory.intra.xiaojukeji.com:80/artifactory/api/npm/npm/tunnel-agent/-/tunnel-agent-0.6.0.tgz?dl=https%3A%2F%2Frepo.huaweicloud.com%2Frepository%2Fnpm%2Ftunnel-agent%2F-%2Ftunnel-agent-0.6.0.tgz"
+  "version" "0.6.0"
+  dependencies:
+    "safe-buffer" "^5.0.1"
 
 "type-check@^0.4.0", "type-check@~0.4.0":
   "integrity" "sha1-B7ggO/pwVsBlcFDjzNLDdzC6uPE="
