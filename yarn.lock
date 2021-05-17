@@ -1420,6 +1420,11 @@
   "resolved" "http://artifactory.intra.xiaojukeji.com:80/artifactory/api/npm/npm/neo-async/-/neo-async-2.6.2.tgz?dl=https%3A%2F%2Frepo.huaweicloud.com%2Frepository%2Fnpm%2Fneo-async%2F-%2Fneo-async-2.6.2.tgz"
   "version" "2.6.2"
 
+"node-downloader-helper@^1.0.18":
+  "integrity" "sha1-E7YzJFdd9RySFC5vpmhZbGq1HZI="
+  "resolved" "http://artifactory.intra.xiaojukeji.com:80/artifactory/api/npm/npm/node-downloader-helper/-/node-downloader-helper-1.0.18.tgz?dl=https%3A%2F%2Frepo.huaweicloud.com%2Frepository%2Fnpm%2Fnode-downloader-helper%2F-%2Fnode-downloader-helper-1.0.18.tgz"
+  "version" "1.0.18"
+
 "normalize-url@^4.1.0":
   "integrity" "sha1-RTNUCH5sqWlXvY9br3U/WYIUISk="
   "resolved" "http://artifactory.intra.xiaojukeji.com:80/artifactory/api/npm/npm/normalize-url/-/normalize-url-4.5.0.tgz?dl=https%3A%2F%2Frepo.huaweicloud.com%2Frepository%2Fnpm%2Fnormalize-url%2F-%2Fnormalize-url-4.5.0.tgz"
